@@ -1,0 +1,87 @@
+body {
+    margin: 0px;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.header span {
+    display:none;
+}
+.enemy-rain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.start-btn {
+    width: 100px;
+    height: 50px;
+    margin: 10px 0px 10px 0px;
+}
+
+.background {
+    width: 800px;
+    height: 600px;
+    background-image: url("img/bg.png");
+    position: relative;
+    overflow: hidden;
+}
+
+.hero {
+    width: 35px;
+    height: 54px;
+    background-image: url("img/hero.png");
+    position: absolute;
+    bottom: 0px;
+    left: 400px;
+    transition: left 0.2s;
+    z-index: 5;
+}
+.hero-front {
+    background-position-x: 0px;
+}
+.hero-right {
+    background-position-x: 35px;
+}
+.hero-left {
+    background-position-x: 70px;
+}
+.hero-back {
+    background-position-x: 105px;
+}
+
+
+.enemy {
+    background-image: url("img/enemy.png");
+    width: 45px;
+    height: 54px;
+    background-position: 0px;
+    position: absolute;
+    top: 0;
+    z-index: 4;
+}
+
+.enemy-die {
+    background-position: 45px;
+}
+
+.gameover {
+    background-color: rgba(0,0,0,0.7);
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding-top: 30%;
+    z-index: 9;
+    display: none;
+}
+
+.block {
+    display:block;
+}
