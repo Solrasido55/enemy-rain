@@ -138,15 +138,15 @@ function heroMoveLeft() {
 
 window.addEventListener('keydown', function(e) {
     e.preventDefault();
-    if (e['key'] === "ArrowLeft") {
+    if (e.code === "ArrowLeft") {
         heroRotate(`left`);
         heroMoveLeft()
-    } else if (e[`key`] === `ArrowRight`) {
+    } else if (e.code === `ArrowRight`) {
         heroRotate(`right`);
         heroMoveRight()
-    } else if (e[`key`] === `ArrowUp`) {
+    } else if (e.code === `ArrowUp`) {
         heroRotate(`back`);
-    } else if (e[`key`] === `ArrowDown`){
+    } else if (e.code === `ArrowDown`){
         heroRotate(`front`);
     }
 })
